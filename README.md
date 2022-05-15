@@ -1,24 +1,17 @@
-# Eth Keyring Controller
+# Hedera Hashgraph Keyring Controller
 
-A module for managing groups of Ethereum accounts called "Keyrings", defined originally for MetaMask's multiple-account-type feature.
-
-To add new account types to a `KeyringController`, just make sure it follows [The Keyring Class Protocol](./docs/keyring.md).
+A module for managing groups of Hedera Hashgraph accounts called "Keyrings", adapted from MetaMask's Keyring Controller.
 
 The KeyringController has three main responsibilities:
 
-- Initializing & using (signing with) groups of Ethereum accounts ("keyrings").
+- Initializing & using (signing with) groups of Hedera Hashgraph accounts ("keyrings").
 - Keeping track of local nicknames for those individual accounts.
 - Providing password-encryption persisting & restoring of secret information.
-
-## Installation
-
-`yarn install eth-keyring-controller --save`
 
 ## Usage
 
 ```javascript
-const KeyringController = require('eth-keyring-controller');
-const SimpleKeyring = require('eth-simple-keyring');
+const KeyringController = require('hashgraph-keyring-controller');
 
 const keyringController = new KeyringController({
   keyringTypes: [SimpleKeyring], // optional array of types to support.
@@ -44,7 +37,7 @@ this.keyringController.on('removedAccount', handleThat);
 
 ## Methods
 
-Currently the methods are heavily commented in [the source code](./index.js), so it's the best place to look until we aggregate it here as well.
+Support the same methods as the original Metamask's Keyring Controller.
 
 ## Contributing
 
