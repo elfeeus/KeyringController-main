@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@hashgraph/hethers": "^1.1.0",
-    "@metamask/eth-hd-keyring": "^4.0.2",
+    "@metamask/eth-hd-keyring": "^6.0.0",
     "bip39": "^3.0.4",
     "browser-passworder": "^2.0.3",
     "dotenv": "^16.0.1",
